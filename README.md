@@ -62,12 +62,16 @@ recent Ubuntu releases, see https://bugzilla.mozilla.org/show_bug.cgi?id=866489 
 ### OSX
 
 * XCode
+* OS X 10.5 or 10.6 SDK
 * 20GB of free space
 * homebrew
   * git (if not using XCode 4)
   * gpg
   * ccache
   * autoconf-2.13 - brew install https://raw.github.com/Homebrew/homebrew-versions/master/autoconf213.rb
+
+Note: If you get warnings about not having OS X 10.5 or 10.6 SDK installed, 
+run `./scripts/bootstrap-mac.sh` to have it installed for you.
 
 Note: Some B2G subrepositories contain files whose names differ only in case.
 Amazingly, the build seems to work properly on OSX case-insensitive file
